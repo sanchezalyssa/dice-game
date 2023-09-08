@@ -1,0 +1,64 @@
+/* montseratt font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background-image: linear-gradient(to top, #6495df, #788de7, #9581ea, #b571e4, #d55bd6);
+    color: whitesmoke;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.player-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.team1,
+.team2 {
+    flex: 1 150px;
+}
+h1 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    text-shadow: -1px 4px 2px rgba(197, 190, 190, 0.6);
+}
+h3 {
+    font-size: 25px;
+    text-shadow: -1px 4px 2px rgba(197, 190, 190, 0.6);
+}
+img {
+    width: 250px;
+}
+button {
+    text-align: center;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #ffe7ff;
+    color: whitesmoke;
+    transition: transform 0.5s ease;
+}
+button:hover {
+    transform: scale(1, 1.1);
+}
