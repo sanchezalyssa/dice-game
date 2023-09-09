@@ -1,32 +1,16 @@
+import { randomNumberOfDice, whoWins } from "./function.js"
+
 let imgsrcOne = document.querySelectorAll("img")[0]
 let imgsrcTwo = document.querySelectorAll("img")[1]
 
 let playerOne = ""
 let playerTwo = ""
 // player dice
-let playerOneDice = ""
-let playerTwoDice = ""
-
-function randomNumberOfDice() {
-    let randomNumber = Math.floor(Math.random() * 6) + 1
-    return randomNumber
-}
-
-function whoWins() {
-    let message = ""
-    if (playerOneDice > playerTwoDice) {
-        message = document.querySelector("h1").textContent = `Player 1 Wins! 🤑`
-    } else if (playerOneDice < playerTwoDice) {
-        message = document.querySelector("h1").textContent = `Player 2 Wins! 🤑`
-    } else {
-        message = document.querySelector("h1").textContent = `Draw 💀`
-    }
-    document.querySelector("h1").textContent
-    return message
-}
+export let playerOneDice = ""
+export let playerTwoDice = ""
 
 document.getElementById("roll-btn").addEventListener("click", () => {
-    //dice of player
+    //random dice of player
     playerOneDice = randomNumberOfDice()
     playerTwoDice = randomNumberOfDice()
     //set attribute
